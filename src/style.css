@@ -1,0 +1,15 @@
+.list-group-item{
+    cursor: pointer;
+}
+.body-area{
+    margin-top: 50px;
+}
+form input{
+    margin-bottom: 15px;
+}
+.delete{
+    margin-right: 5px;
+}
+.delete, .edit{
+    cursor: pointer;
+}
