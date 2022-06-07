@@ -32,7 +32,12 @@ form.addEventListener('submit', function (e) {
     }
         ;[...form.elements].forEach(el => {
             if (el.type !== 'submit') {
-                formData[el.name] = el.value
+                if(!el.value){
+                    alert(`${el.name} is required`)
+                    throw new Error
+                } else{
+                    formData[el.name] = el.value
+                }
             }
         })
     createRow(formData.id, formData.Name, formData.Email, formData.Email, formData.Class)
